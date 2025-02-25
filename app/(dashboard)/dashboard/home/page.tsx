@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home Page",
+  description: "This is the home page!",
+};
+
 const Home = async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/albums");
   if (!response.ok) throw new Error("Fetch failed");
